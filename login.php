@@ -11,35 +11,28 @@
 	<?php 
 		require('modulos/config.php');
 		require('modulos/slider.php');
-		if(!$user->is_logged_in()){ header('Location: login.php'); exit(); }
 		?>
 	<body>
 		<?php 
 			require('modulos/nav.php');
 			?>
 		<header class="contenido">
-			<div class="cont-iz-grande" style="margin-top: 10%;top:0%">
+			<div class="cont-iz">
 				<div class="cont-iz2">
-					<h1 class="cont-iz-titulo">Aqui va un titulito</h1>
+					<h1 class="cont-iz-titulo">Acceder</h1>
 					<hr>
-					<p>Aquí va un textito bonito acorde al titulito</p>
-					<?php require('modulos/panel.php');  ?>
+					<?php 
+						require('modulos/login.php');
+						?>
 					</div>
 				</div>
-			<a class="cont-de" style="width: 15%;margin-top:2%;">
-				<p style=""><button class="cont-iz-boton"onclick="window.location.href='modulos/logout.php'">Cerrar sesión</button></p>
-				</a>
-			<a class="cont-de" style="width: 15%; margin-top:10%;">
+			<a class="cont-de" style="top:15%;width: 15%;">
 				Hora in Game<br>
-				<?php require('modulos/hora.php');  ?>
+				19:26
 				</a>
-			<a class="cont-de" style="width: 15%;margin-top:15%;">
+			<a class="cont-de" style="top:25%;width: 15%;">
 				Server <font color="#00ff15">Online</font>
 				</a>
-			<div class="cont-de" style="width: 20%;text-align: left;margin-top:20%;">
-				<a>Inf Server</a><br>
-				dddd
-				</div>
 			</header>
 		</body>
 	</html>
